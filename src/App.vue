@@ -1,22 +1,34 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
+  <nav class="items-center p-8 max-w-screen-xl ">
+    <ul class="flex justify-between">
       <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
+        <router-link class="" to="/">
+          + TiK Tac
         </router-link>
       </li>
+      <div class="flex">
+        <li class="group">
+          <router-link to="/CustomView">
+            Customize
+          </router-link>
+        </li>
+        <li class="mx-12">
+          <router-link to="/HistoriqueView">
+            My selection
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/ConnexionView">
+            Sig in
+          </router-link>
+        </li>
+      </div>
     </ul>
   </nav>
 
   <!-- Affiche les pages -->
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view class="" />
   </Suspense>
 </template>
 
