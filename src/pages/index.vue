@@ -1,8 +1,8 @@
 <template>
   <main>
-    <div>
-      <p class=""> IL </p>
-      <img src="@/assets/img/fondpage1-2.jpg" alt="">
+    <div class="bg-fondpage1-2 bg-cover p-20 bg-center">
+      <p class="bg-bleu"> IL </p>
+      <!-- <img src="@/assets/img/fondpage1-2.jpg" alt=""> -->
     </div>
     <div>
       <img src="@/assets/img/montre.jpg" alt="">
