@@ -1,7 +1,10 @@
 <script setup lang="ts" >
-import { mesMat } from "@/types";
-import { mesMotifs } from "@/types";
-import Montre from "./montre.vue";
+//import { mesMat } from "@/types";
+
+const { data: mesMat, error } = await supabase
+    .from('Materiel')
+    .select('*')
+
 defineProps<{
     name?: string;
     label?: string;
@@ -9,13 +12,13 @@ defineProps<{
 </script>
 
 <template>
-    <FormKit :name="name" :label="label" value="#FFFFFF" type="radio" :options="mesMotifs"
+    <FormKit v-if="mesMat" :name="name" :label="label" value="#FFFFFF" type="radio" :options="mesMat"
         :sections-schema="{ inner: { $el: null }, decorator: { $el: null }, }" input-class="peer sr-only"
         options-class="flex gap-1 mb-3 mt-1">
         <template #label="context">
-            <div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600">
-                <img :src="context.option.urlsvg" alt="">
-                <span class="sr-only">{{ context.option.label }}</span>
+            <div class="border-2 peer-checked:border-red-600">
+                <img class="h-6 w-6 rounded-full" :src="context.option.urlsvg" alt="">
+                <span class="">{{ context.option.label }}</span>
             </div>
         </template>
     </FormKit>

@@ -55,11 +55,10 @@ async function commander() {
         <FormKit type="form" v-model="montre"
             :submit-attrs="{ classes: { input: 'bg-green-600 text-green-100 p-2 rounded-lg text-xl mt-2' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
-            <FormKitListmesMotifs name="type_bracelet" label="Type e bracelet" value="trait" />
-            <FormKitListmesMotifs name="value" label="mat" value="cuir" />
-
-            <FormKit type="select" name="type_bracelet" label="Type e bracelet"
-                :options="{ 'cioeur': 'Motif Coeur', 'trait': 'Des traits' }" />
+            <FormKitListmesMotifs name="type_bracelet" label="Type e bracelet" />
+            <FormKitListMatVue name="materiaux_bracelet" label=" Matiere du bracelet" />
+            <FormKit type="select" name="label" label="Type de materiaux"
+                :options="{ 'Cuir': 'Cuir', 'Argent': 'Argent' }" />
         </FormKit>
     </div>
     <montrevue v-bind="montre" />

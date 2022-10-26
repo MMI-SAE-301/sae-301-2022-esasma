@@ -14,7 +14,9 @@ export const mesMotifs = [
 ]
 
 export const mesMat = [
-    { value: '', label: '', urlsvg: "" },
+    { value: 'valeru1', label: 'label1', urlsvg: "/url/sg1" },
+    { value: 'valeru2', label: 'label2', urlsvg: "/url/sg2" },
+    { value: 'valeru3', label: 'label3', urlsvg: "/url/sg3" },
 
 ]
 
