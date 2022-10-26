@@ -1,9 +1,7 @@
-<template>
-    <main class="bg-sky-200">
-        <h4> Connexion </h4>
-    </main>
+<template >
+
 </template>
     
-<script>
+<script setup lang="ts">
 
 </script>

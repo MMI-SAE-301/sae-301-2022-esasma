@@ -10,6 +10,11 @@ module.exports = {
       },
       "colors": {
         "bleu": "#d0dfe4",
+        "blanc": "#ffffff",
+        "gris": "#f5f5f5",
+        "noir": "#000000",
+        "bleuf": "#96acb5",
+        "grisf": "#8f8f8f"
 
       },
       "fontFamily": {

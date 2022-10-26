@@ -2,6 +2,6 @@
     <h4> Historique </h4>
 </template>
     
-<script>
+<script setup lang="ts">
 
 </script>

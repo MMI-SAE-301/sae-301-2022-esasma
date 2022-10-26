@@ -15,8 +15,8 @@
     <h2> Tik Tok </h2>
     <div> <img src="@/assets/img/montre4.jpg" alt="">
       <img src="@/assets/img/montre3.png" alt="">
-      <img src="@/assets/img/montre noir ronde.png" alt="">
-      <img src="@/assets/img/montre blanche.png" alt="">
+      <img src="@/assets/img/montrenoirronde.png" alt="">
+      <img src="@/assets/img/montreblanche.png" alt="">
 
     </div>
 
@@ -24,6 +24,6 @@
   </main>
 </template>
 
-<script>
+<script setup lang="ts">
 
 </script>

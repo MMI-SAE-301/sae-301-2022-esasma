@@ -12,9 +12,9 @@ import FormKitListmesMotifs from "./FormKitListmesMotifs.vue";
 
 const router = useRouter();
 
-const montre = ref<Montre>(props.data ?? {});
 
 const props = defineProps(["id", "data"]);
+const montre = ref<Montre>(props.data ?? {});
 
 
 
@@ -57,8 +57,7 @@ async function commander() {
             <FormKitListColors name="bracelet" label="bracelet" />
             <FormKitListmesMotifs name="type_bracelet" label="Type e bracelet" />
             <FormKitListMatVue name="materiaux_bracelet" label=" Matiere du bracelet" />
-            <FormKit type="select" name="label" label="Type de materiaux"
-                :options="{ 'Cuir': 'Cuir', 'Argent': 'Argent' }" />
+            <FormKit type="select" name="label" label="Taille" :options="{ 'Small': 's', 'Large': 'L' }" />
         </FormKit>
     </div>
     <montrevue v-bind="montre" />
