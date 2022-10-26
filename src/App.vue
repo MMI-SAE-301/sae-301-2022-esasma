@@ -1,31 +1,32 @@
 <template>
-  <nav class="items-center p-8 max-w-screen-xl ">
-    <ul class="flex justify-between">
-      <li>
-        <router-link class="" to="/">
-          + TiK Tac
-        </router-link>
-      </li>
-      <div class="flex">
-        <li class="group">
-          <router-link to="/CustomView">
-            Customize
-          </router-link>
-        </li>
-        <li class="mx-12">
-          <router-link to="/HistoriqueView">
-            My selection
-          </router-link>
-        </li>
+  <header class="items-center p-8 max-w-screen-xl">
+    <nav>
+      <ul class="flex justify-between">
         <li>
-          <router-link to="/ConnexionView">
-            Sig in
+          <router-link class="" to="/">
+            + TiK Tac
           </router-link>
         </li>
-      </div>
-    </ul>
-  </nav>
-
+        <div class="flex">
+          <li class="group">
+            <router-link to="/CustomView">
+              Customize
+            </router-link>
+          </li>
+          <li class="mx-12">
+            <router-link to="/HistoriqueView">
+              My selection
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/SigninView">
+              Sig in
+            </router-link>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
   <!-- Affiche les pages -->
   <Suspense>
     <router-view class="" />
@@ -33,5 +34,5 @@
 </template>
 
 <script setup lang="ts">
-import { Bars3Icon } from "@heroicons/vue/20/solid";
+
 </script>
