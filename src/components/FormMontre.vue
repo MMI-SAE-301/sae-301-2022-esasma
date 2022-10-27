@@ -18,48 +18,37 @@ const props = defineProps(["id", "data"]);
 const montre = ref<Montre>(props.data ?? {});
 
 
+if (props.id) {
 
-/*if (props.id) {
-    // On charge les données de la maison
     let { data, error } = await supabase
-        .from("")
+        .from("Montre")
         .select("*")
-        .eq("chaussure_id", props.id);
-    if (error || !data)
-        console.log("n'a pas pu charger le table Maison :", error);
-    else chaussure.value = data[0];
+        .eq("id_montre", props.id);
+    if (error) console.log("n'a pas pu charger le table montre :", error);
+    else montre.value = (data as any[])[0];
 }
-
-async function upsertBasket(dataForm, node) {
-    dataForm.user_id = supabase.auth.user().id
-    const { data, error } = await supabase.from("chaussure").upsert(dataForm);
+// @ts-ignore
+async function upsertMontre(dataForm, node) {
+    const { data, error } = await supabase.from("Montre").upsert(dataForm);
     if (error) node.setErrors([error.message]);
     else {
         node.setErrors([]);
-        router.push({ name: "basket-edit-id", params: { id: data[0].chaussure_id } });
+        router.push("/");
     }
 }
 
-async function commander() {
-    const { data, error } = await supabase
-        .from('chaussure')
-        .update({ chaussure_commandee: true })
-        .eq('chaussure_id', props.id)
-}
-
-*/
 //             <img :src="context.option.urlsvg" alt="">
 </script>
 
 <template>
     <div class="p-2 flex flex-col-reverse gap-5 md:grid md:grid-cols-2">
-        <FormKit type="form" v-model="montre"
+        <FormKit type="form" v-model="montre" @submit="upsertMontre"
             :submit-attrs="{ classes: { input: 'bg-green-600 text-green-100 p-2 rounded-lg text-xl mt-2' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
             <FormKitListmesMotifs name="type_bracelet" label="Type de bracelet" />
             <FormKitListMatVue name="materiaux_bracelet" label=" Matiere du bracelet" />
             <FormKitListmesBoitier name="type_boitier" label=" Type boitier" />
-            <FormKit type="select" name="label" label="Taille" :options="{ 'Small': 's', 'Large': 'L' }" />
+            <!--            <FormKit type="select" label="Taille" :options="{ 'Small': 's', 'Large': 'L' }" />-->
         </FormKit>
         <div class=" ">
             <montrevue v-bind="montre" class="w-64 h-64" />
