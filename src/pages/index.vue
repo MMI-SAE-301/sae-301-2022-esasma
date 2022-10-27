@@ -25,7 +25,9 @@
     <img src="@/assets/img/montreblanche.png" alt="">
 
   </div>
-  <Button />
+  <div class="flex justify-center m-aut p-10">
+    <Button />
+  </div>
 
 
 </template>
