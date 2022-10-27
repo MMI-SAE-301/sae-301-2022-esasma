@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'fondpage1-2': "url('/img/fondpage1-2.jpg')",
+        'fondpage': "url('/img/fondpage1-2.jpg')",
       },
       "colors": {
         "bleu": "#d0dfe4",
@@ -18,8 +18,8 @@ module.exports = {
 
       },
       "fontFamily": {
-        "playfair-display": "Playfair Display",
-        "fasthand": "Fasthand"
+        "playfair-display": ["Playfair Display", "sans-serif"],
+        "fasthand": ["Fasthand", "sans-serif"]
       },
     },
   },

@@ -1,12 +1,11 @@
 <template>
 
-  <div class="relative ">
-    <p class="text-noir font-fasthand sm:font-2xl md:font-5xl absolute top-1/4 right-70%"> One watch many styles </p>
-    <img src="/img/fondpage1-2.jpg" alt="">
+  <div class=" bg-fondpage pb-96 bg-contain bg-no-repeat">
+    <p class="text-noir text-center py-10 font-fasthand"> One watch many styles </p>
   </div>
-  <div class="grid grid-cols-2 ">
+  <div class=" grid grid-cols-2 ">
     <div>
-      <img class="h-44 md:h-60 lg:h-96 w-full " src="@/assets/img/montre.jpg" alt="">
+      <img class=" h-44 md:h-60 lg:h-96 w-full " src="@/assets/img/montre.jpg" alt="">
     </div>
     <div class="bg-gris">
       <h1 class="m-3 text-center"> Tik Tok </h1>

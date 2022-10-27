@@ -52,7 +52,7 @@ async function commander() {
 </script>
 
 <template>
-    <div class="p-2 flex">
+    <div class="p-2 flex flex-col-reverse gap-5 md:grid md:grid-cols-2">
         <FormKit type="form" v-model="montre"
             :submit-attrs="{ classes: { input: 'bg-green-600 text-green-100 p-2 rounded-lg text-xl mt-2' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
@@ -61,6 +61,8 @@ async function commander() {
             <FormKitListmesBoitier name="type_boitier" label=" Type boitier" />
             <FormKit type="select" name="label" label="Taille" :options="{ 'Small': 's', 'Large': 'L' }" />
         </FormKit>
+        <div class=" ">
+            <montrevue v-bind="montre" class="w-64 h-64" />
+        </div>
     </div>
-    <montrevue v-bind="montre" />
 </template>
