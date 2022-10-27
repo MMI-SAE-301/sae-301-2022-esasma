@@ -9,8 +9,10 @@
       <img class=" h-44 md:h-60 lg:h-96 w-full " src="@/assets/img/montre.jpg" alt="">
     </div>
     <div class="bg-gris">
-      <h1 class="m-3 text-center"> Tik Tok </h1>
-      <p class=" ml-5 mr-2 text-xs sm:text-sm md:text-base lg:text-lg"> + Tic Tac is a web site that allow you to
+      <h1 class=" text-center sm:text-xl md:text-2xl lg:text-4xl m-10 font-playfair-display font-semibold "> Tik Tok
+      </h1>
+      <p class=" ml-5 mr-2 text-xs sm:text-sm md:text-base lg:text-lg m-10 font-playfair-display font-medium "> + Tic
+        Tac is a web site that allow you to
         express yourself and be yourself with
         our new
         collection of
@@ -27,8 +29,9 @@
         src="@/assets/img/daniel-korpai-hbTKIbuMmBI-unsplash 1.jpg" alt="">
     </div>
     <div class>
-      <p class="m-3 text-center lg:text-xl "> 159,99 $</p>
-      <p class="text-xs ml-5 mr-2 sm:text-sm md:text-base lg:text-lg"> A symbol of uniqueness and rarity, the Tik Tak
+      <p class="m-3 text-center sm:text-xl md:text-2xl lg:text-4xl font-playfair-display font-medium "> 159,99 $</p>
+      <p class="text-xs ml-5 mr-2 sm:text-sm md:text-base lg:text-lg font-playfair-display font-medium"> A symbol of
+        uniqueness and rarity, the Tik Tak
         watch is distinguished by
         its
         minimalist design and its many variations. <br />
@@ -39,17 +42,17 @@
       </div>
     </div>
   </div>
-  <h2 class="text-center m-6"> Tik Tok </h2>
+  <h2 class="text-center sm:text-xl md:text-2xl lg:text-4xl m-10 font-playfair-display font-semibold "> Tik Tok </h2>
   <div class="grid grid-cols-2 md:grid-cols-4 "> <img src="@/assets/img/montre4.jpg" alt="">
     <img src="@/assets/img/montre3.png" alt="">
     <img src="@/assets/img/montrenoirronde.png" alt="">
-    <img class="lg:h-full md:h-full" src="@/assets/img/montreblanche.png" alt="">
+    <img class="lg:h-full md:h-full " src="@/assets/img/montreblanche.png" alt="">
 
   </div>
   <div class="flex justify-center m-aut p-10">
     <Button />
   </div>
-  <div class="md:flex lg:flex">
+  <div class="md:flex lg:flex font-playfair-display font-medium">
     <div class="flex p-2 m-10 border-2 border-solid border-bleu ">
       <div class="p-1 ">
         <photoavis />
