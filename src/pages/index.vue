@@ -1,7 +1,8 @@
 <template>
 
-  <div class=" bg-fondpage pb-96 bg-contain bg-no-repeat">
-    <p class="text-noir text-center py-10 font-fasthand"> One watch many styles </p>
+  <div class=" bg-fondpage pb-96 bg-cover bg-no-repeat">
+    <p class="text-noir text-center py-10 text-xl sm:text-2xl md:text-5xl lg:text-7xl font-fasthand"> One watch many
+      styles </p>
   </div>
   <div class=" grid grid-cols-2 ">
     <div>
@@ -9,11 +10,15 @@
     </div>
     <div class="bg-gris">
       <h1 class="m-3 text-center"> Tik Tok </h1>
-      <p class="text-xs ml-5 mr-2"> + Tic Tac is a web site that allow you to express yourself and be yourself with
+      <p class=" ml-5 mr-2 text-xs sm:text-sm md:text-base lg:text-lg"> + Tic Tac is a web site that allow you to
+        express yourself and be yourself with
         our new
         collection of
         customizable watch <br />
         100% made in France with quality material and recyclabe material </p>
+      <div class="flex justify-center m-aut p-10">
+        <Button />
+      </div>
     </div>
   </div>
   <div class="grid grid-cols-2 mt-10">
@@ -22,11 +27,16 @@
         src="@/assets/img/daniel-korpai-hbTKIbuMmBI-unsplash 1.jpg" alt="">
     </div>
     <div class>
-      <p class="m-3 text-center"> 159,99 $</p>
-      <p class="text-xs ml-5 mr-2"> A symbol of uniqueness and rarity, the Tik Tak watch is distinguished by its
+      <p class="m-3 text-center lg:text-xl "> 159,99 $</p>
+      <p class="text-xs ml-5 mr-2 sm:text-sm md:text-base lg:text-lg"> A symbol of uniqueness and rarity, the Tik Tak
+        watch is distinguished by
+        its
         minimalist design and its many variations. <br />
         Only priced at $159.00, it guarantees unique comfort. <br />
         100% made in France with quality material and recyclabe material </p>
+      <div class="flex justify-center m-aut p-10">
+        <Button />
+      </div>
     </div>
   </div>
   <h2 class="text-center m-6"> Tik Tok </h2>
