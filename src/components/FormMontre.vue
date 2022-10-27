@@ -52,7 +52,7 @@ async function commander() {
 </script>
 
 <template>
-    <div class="p-2">
+    <div class="p-2 flex">
         <FormKit type="form" v-model="montre"
             :submit-attrs="{ classes: { input: 'bg-green-600 text-green-100 p-2 rounded-lg text-xl mt-2' } }">
             <FormKitListColors name="bracelet" label="bracelet" />

@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import FormMontre from '@/components/FormMontre.vue';
-import FormKitListMat from '@/components/FormKitListmesMotifs.vue';
 </script>
 
 <template>
-    <FormMontre />
+    <div class="bg-bleu p-20">
+        <div class="bg-white p-40 text-center grid justify-center ">
+            <FormMontre />
+        </div>
+    </div>
 
 </template>
