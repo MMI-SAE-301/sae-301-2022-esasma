@@ -15,7 +15,7 @@ defineProps<{
         <template #label="context">
             <div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600"
                 :style="{ backgroundColor: context.option.value }" />
-            <span class="sr-only">{{ context.option.label }}</span>
+            <span class="">{{ context.option.label }}</span>
         </template>
     </FormKit>
 </template>
