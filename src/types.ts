@@ -7,21 +7,21 @@ export interface Montre {
 }
 
 export const mesMotifs = [
-    { value: 'cioeur', label: 'Motif Coeur', urlsvg: "/img/fondpage1-2.jpg" },
-    { value: 'trait', label: 'Des traits', urlsvg: "/img/fondpage1-2.jpg" },
-    { value: 'cuir', label: 'Des traits', urlsvg: "/img/fondpage1-2.jpg" },
+    { value: 'cioeur', label: 'Motif Coeur', urlsvg: "/src/assets/img/Coeur.svg" },
+    { value: 'trait', label: 'Des traits', urlsvg: "/src/assets/img/Group 10.svg" },
+    { value: 'etoile', label: 'Des etoile', urlsvg: "/src/assets/img/emojione_star.svg" },
 
 ]
 export const mesBoitier = [
-    { value: 'boitier', label: 'Boitier' },
-    { value: 'boitier_rond', label: 'Boitier_rond' },
+    { value: 'boitier', label: 'Carré' },
+    { value: 'boitier_rond', label: 'Rond' },
 
 ]
 
 export const mesMat = [
-    { value: 'valeru1', label: 'label1', urlsvg: "/url/sg1" },
-    { value: 'valeru2', label: 'label2', urlsvg: "/url/sg2" },
-    { value: 'valeru3', label: 'label3', urlsvg: "/url/sg3" },
+    { value: '', label: '', urlsvg: "" },
+    { value: '', label: '', urlsvg: "" },
+    { value: '', label: '', urlsvg: "" },
 
 ]
 
