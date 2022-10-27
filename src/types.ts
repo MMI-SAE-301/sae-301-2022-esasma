@@ -12,6 +12,11 @@ export const mesMotifs = [
     { value: 'cuir', label: 'Des traits', urlsvg: "/img/fondpage1-2.jpg" },
 
 ]
+export const mesBoitier = [
+    { value: 'boitier', label: 'Boitier' },
+    { value: 'boitier_rond', label: 'Boitier_rond' },
+
+]
 
 export const mesMat = [
     { value: 'valeru1', label: 'label1', urlsvg: "/url/sg1" },
@@ -23,14 +28,7 @@ export const mesMat = [
 export const colors = {
     "#000000": "Noir",
     "#FFFFFF": "Blanc",
-    "#FF0000": "Rouge",
-    "#00FF00": "Vert",
-    "#0000FF": "Bleu",
-    "#FFFF00": "Jaune",
-    "#FF00FF": "Magenta",
-    "#00FFFF": "Cyan",
-    "#C0C0C0": "Gris clair",
-    "#808080": "Gris",
-    "#800000": "Marron",
-    "#808000": "Olive",
+    "#8F8F8F": "Gris",
+    "#96ACB5": "Bleu",
+    "#AB653F": "Marron",
 };

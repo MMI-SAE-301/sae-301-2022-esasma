@@ -1,8 +1,9 @@
+<script setup lang="ts">
+import FormMontre from '@/components/FormMontre.vue';
+import FormKitListMat from '@/components/FormKitListmesMotifs.vue';
+</script>
+
 <template>
-    <h4> Custome </h4>
+    <FormMontre />
 
 </template>
-    
-<script setup lang="ts">
-
-</script>

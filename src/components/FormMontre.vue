@@ -9,6 +9,7 @@ import FormKitListColors from "./FormKitListColors.vue";
 import { mesMat } from "@/types";
 import FormKitListMatVue from "./FormKitListMat.vue";
 import FormKitListmesMotifs from "./FormKitListmesMotifs.vue";
+import FormKitListmesBoitier from "./FormKitListmesBoitier.vue";
 
 const router = useRouter();
 
@@ -55,8 +56,10 @@ async function commander() {
         <FormKit type="form" v-model="montre"
             :submit-attrs="{ classes: { input: 'bg-green-600 text-green-100 p-2 rounded-lg text-xl mt-2' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
-            <FormKitListmesMotifs name="type_bracelet" label="Type e bracelet" />
+            <FormKitListColors name="ecran" label="ecran" />
+            <FormKitListmesMotifs name="type_bracelet" label="Type de bracelet" />
             <FormKitListMatVue name="materiaux_bracelet" label=" Matiere du bracelet" />
+            <FormKitListmesBoitier name="type_boitier" label=" Type boitier" />
             <FormKit type="select" name="label" label="Taille" :options="{ 'Small': 's', 'Large': 'L' }" />
         </FormKit>
     </div>

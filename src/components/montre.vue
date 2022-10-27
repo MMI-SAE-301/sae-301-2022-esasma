@@ -72,7 +72,7 @@ withDefaults(defineProps<Montre>(), {
             <rect x="82.05" y="172.53" width="303.55" height="369.83" rx="65.21" fill="#b3b3b3" stroke="#000"
                 stroke-miterlimit="10" stroke-width="0.5" />
         </g>
-        <g id="boitier_rond" data-name="boitier rond">
+        <g id="boitier_rond" v-if="type_boitier == 'boitier_rond'">
             <path d="M653.73,637.22a238.06,238.06,0,1,1,168.34-69.73A236.48,236.48,0,0,1,653.73,637.22Z"
                 transform="translate(-415.55 -45.58)" fill="#fff" />
             <path
