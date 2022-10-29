@@ -42,7 +42,7 @@ async function upsertMontre(dataForm, node) {
 
 <template>
     <div
-        class="p-2 flex flex-col-reverse gap-5 md:grid md:grid-cols-2 text-center sm:text-xl md:text-2xl lg:text-4xl m-10 font-playfair-display font-semibold text-grisf">
+        class="p-2 flex flex-col-reverse gap-5 md:grid md:grid-cols-2 text-center sm:text-xl md:text-2xl lg:text-3xl m-10 font-playfair-display font-semibold text-grisf">
         <FormKit type="form" v-model="montre" @submit="upsertMontre"
             :submit-attrs="{ classes: { input: 'text-white bg-bleuf border border-white hover:bg-white hover:text-bleuf hover:border-bleuf active:bg-bleuf font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
