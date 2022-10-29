@@ -6,7 +6,7 @@
   </div>
   <div class=" grid grid-cols-2 ">
     <div>
-      <img class=" h-44 md:h-60 lg:h-96 w-full " src="@/assets/img/montre.jpg" alt="">
+      <img class=" h-44 md:h-60 lg:h-96 w-full " src="@/assets/img/montre.jpg" alt=" img de montre connecté ">
     </div>
     <div class="bg-gris">
       <h1 class=" text-center sm:text-xl md:text-2xl lg:text-4xl m-10 font-playfair-display font-semibold "> Tik Tok
@@ -44,9 +44,9 @@
   </div>
   <h2 class="text-center sm:text-xl md:text-2xl lg:text-4xl m-10 font-playfair-display font-semibold "> Tik Tok </h2>
   <div class="grid grid-cols-2 md:grid-cols-4 "> <img src="@/assets/img/montre4.jpg" alt="">
-    <img src="@/assets/img/montre3.png" alt="">
-    <img src="@/assets/img/montrenoirronde.png" alt="">
-    <img class="lg:h-full md:h-full " src="@/assets/img/montreblanche.png" alt="">
+    <img src="@/assets/img/montre3.png" alt=" img de montre connecté">
+    <img src="@/assets/img/montrenoirronde.png" alt=" img de montre connecté">
+    <img class="lg:h-full md:h-full " src="@/assets/img/montreblanche.png" alt=" img de montre connecté">
 
   </div>
   <div class="flex justify-center m-aut p-10">
