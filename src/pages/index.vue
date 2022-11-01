@@ -107,10 +107,12 @@
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
 import Button from "@/components/Boutton.vue"
 import etoileVue from "@/components/etoile.vue";
 import photoavis from "@/components/photoavis.vue"
+import Footer from "@/components/Footer.vue";
 </script>
