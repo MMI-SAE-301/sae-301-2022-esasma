@@ -64,6 +64,7 @@
       </div>
     </nav>
   </header>
+
   <!-- Affiche les pages -->
   <Suspense>
     <router-view class="" />
