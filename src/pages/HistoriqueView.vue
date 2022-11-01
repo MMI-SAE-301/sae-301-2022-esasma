@@ -4,6 +4,7 @@ import { ref } from "vue";
 import montreView from "@/components/montre.vue";
 import type { Montre } from "@/types";
 import { supabase } from "@/supabase";
+import Footer from "@/components/Footer.vue";
 
 import { useRouter } from "vue-router";
 const router = useRouter();
@@ -53,4 +54,5 @@ if (error) {
             </ul>
         </div>
     </div>
+    <Footer />
 </template>
