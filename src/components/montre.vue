@@ -29,7 +29,7 @@ withDefaults(defineProps<Montre>(), {
                 points="254.46 142.53 251.3 144.01 250.87 147.48 248.32 144.91 244.82 145.43 246.41 142.35 244.68 139.21 248.21 139.88 250.64 137.41 251.23 140.9 254.46 142.53"
                 fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="0.5" />
         </g>
-        <g id="etoile" v-if="type_bracelet == 'etoile'">
+        <g id="etoile" v-if="type_bracelet === 'etoile'">
             <polygon id=" etoile-2" data-name="etoile"
                 points="278.61 23.16 299.57 12.14 295.57 35.48 312.53 52.02 289.09 55.42 278.61 76.67 268.13 55.42 244.68 52.02 261.65 35.48 257.64 12.14 278.61 23.16"
                 fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="0.5" />
@@ -65,14 +65,14 @@ withDefaults(defineProps<Montre>(), {
                 fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="0.5" />
         </g>
         <g id="boitier">
-            <rect x="43.87" y="130.63" width="379.91" height="453.62" rx="80.8" fill="#fff" stroke="#000"
+            <rect x="43.87" y="130.63" width="379.91" height="453.62" rx="80.8" :fill="boitier" stroke="#000"
                 stroke-miterlimit="10" stroke-width="0.5" />
             <rect x="63.14" y="156.05" width="341.37" height="402.78" rx="72.17" fill="#fff" stroke="#000"
                 stroke-miterlimit="10" stroke-width="0.5" />
             <rect x="82.05" y="172.53" width="303.55" height="369.83" rx="65.21" fill="#b3b3b3" stroke="#000"
                 stroke-miterlimit="10" stroke-width="0.5" />
         </g>
-        <g id="boitier_rond" v-if="type_boitier == 'boitier_rond'">
+        <g id="boitier_rond" v-if="type_boitier === 'boitier_rond'">
             <path d="M653.73,637.22a238.06,238.06,0,1,1,168.34-69.73A236.48,236.48,0,0,1,653.73,637.22Z"
                 transform="translate(-415.55 -45.58)" fill="#fff" />
             <path
@@ -92,7 +92,7 @@ withDefaults(defineProps<Montre>(), {
                 font-family="PlayfairDisplaySC-Black, Playfair Display SC" font-weight="800" letter-spacing="-0.01em">
                 <tspan xml:space="preserve">Lun. 24 oct.</tspan>
             </text></g>
-        <g id="Cioeur" v-if="type_bracelet == 'cioeur'">
+        <g id="Cioeur" v-if="type_bracelet === 'cioeur'">
             <path id="coeur" d="M585.13,111.16,569.79,95.82c-14-14,1.82-29.8,15.81-15.8,13.3-13.3,28.64,2,15.34,15.34Z"
                 transform="translate(-415.55 -45.58)" fill="none" stroke="#d000a8" stroke-miterlimit="10" />
             <path id="coeur-2" data-name="coeur"

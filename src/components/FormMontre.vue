@@ -46,6 +46,7 @@ async function upsertMontre(dataForm, node) {
         <FormKit type="form" v-model="montre" @submit="upsertMontre"
             :submit-attrs="{ classes: { input: 'text-white bg-bleuf border border-white hover:bg-white hover:text-bleuf hover:border-bleuf active:bg-bleuf font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' } }">
             <FormKitListColors name="bracelet" label="bracelet" />
+            <FormKitListColors name="boitier" label="boitier" />
             <FormKitListmesMotifs name="type_bracelet" label="Type de bracelet" />
             <FormKitListMatVue name="materiaux_bracelet" label=" Matiere du bracelet" />
             <FormKitListmesBoitier name="type_boitier" label=" Type boitier" />
