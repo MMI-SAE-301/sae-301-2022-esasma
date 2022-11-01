@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import FormMontre from '@/components/FormMontre.vue';
+import Footer from "@/components/Footer.vue";
+
 </script>
 
 <template>
@@ -13,5 +15,6 @@ import FormMontre from '@/components/FormMontre.vue';
             <FormMontre />
         </div>
     </div>
+    <Footer />
 
 </template>
