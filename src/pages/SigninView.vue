@@ -7,8 +7,10 @@
             <ConnexionView provider="facebook" class=" border-2 border-solid border-grisf my-4  w-60 p-3" />
         </div>
     </div>
+    <Footer />
 </template>
 
 <script setup lang="ts">
 import ConnexionView from "@/components/ConnexionView.vue";
+import Footer from "@/components/Footer.vue";
 </script> 
